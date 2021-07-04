@@ -1,1 +1,1 @@
-trying to write a rust script to automate git commits and pushing into repo 
+a simple script i wrote to automate git commits and pushing
