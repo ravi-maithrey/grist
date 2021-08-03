@@ -1,17 +1,16 @@
 use std::process::Command;
-use structopt::StructOpt;
+use clap::Clap;
 
-#[derive(Debug, StructOpt)]
-#[structopt(name = "grit")]
-struct Opt {
+#[derive(Clap)]
+struct Opts {
     // The message to be passed in while commiting to git
     /// The message to be passed in while commiting to git
-    #[structopt(short, long, default_value = "from my pc")]
+    #[clap(short, long, default_value = "from my pc")]
     message: String,
 }
 fn main() {
-    let option = Opt::from_args();
-    let message = format!("{:?}", option);
+    let option = Opts::parse();
+    let message = option.message;
     let mut child = Command::new("/usr/bin/sh");
     // let command = "git add . && git commit -S -m '" + message + "' && git push"; 
     let command = format!("git add . && git commit -S -m '{}' && git push", message);
