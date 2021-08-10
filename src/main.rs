@@ -2,7 +2,7 @@ use clap::Clap;
 use std::process::Command;
 
 #[derive(Clap)]
-#[clap(version = "1.1", author = "Ravi Maithrey <maitrey.ind@gmail.com>")]
+#[clap(version = "1.2", author = "Ravi Maithrey <maitrey.ind@gmail.com>")]
 struct Opts {
     // The message to be passed in while commiting to git
     /// The message to be passed in while commiting to git
