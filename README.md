@@ -1,1 +1,1 @@
-a simple script i wrote to automate git commits and pushing
+A way to automate adding, signing and commiting as well as pushing to GitHub
