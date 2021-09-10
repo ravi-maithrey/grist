@@ -1,6 +1,6 @@
 [package]
 name = "grit"
-version = "0.1.0"
+version = "1.2.0"
 authors = ["ravi maithrey <maitrey.ind@gmail.com>"]
 edition = "2018"
 
