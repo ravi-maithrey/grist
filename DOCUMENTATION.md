@@ -3,7 +3,7 @@ This is the documentation of the rust package *grist*. This is a command-line ap
 ### Basic Usage
 `grist`
 
-This adds all files in your current folder to the commit queue, commits them with the default message "From my PC" and then pushes them to the remote origin specified for the folder. To change the commit message check down [below](#commit messages)
+This adds all files in your current folder to the commit queue, commits them with the default message "From my PC" and then pushes them to the remote origin specified for the folder. To change the commit message check down [below](https://github.com/ravi-maithrey/grist/blob/main/DOCUMENTATION.md#commit-messages)
 
 ### To access help
 `grist -h`
