@@ -12,7 +12,7 @@ struct Opts {
 fn main() {
     let option = Opts::parse();
     let message = option.message;
-    let mut child = Command::new("/usr/bin/sh");
+    let mut child = Command::new("sh");
     // let command = "git add . && git commit -S -m '" + message + "' && git push";
     let command = format!("git add . && git commit -S -m '{}' && git push", message);
     child
